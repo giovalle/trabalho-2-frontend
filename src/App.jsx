@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <Container maxWidth="md" className={styles.container}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes />
       </BrowserRouter>
     </Container>
