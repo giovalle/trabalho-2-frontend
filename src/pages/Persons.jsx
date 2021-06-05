@@ -35,6 +35,7 @@ const Persons = () => {
 
   const styles = useStyles();
 
+  // aqui chama a API
   const fetchPersons = useCallback(async () => {
     setState((currentState) => ({ ...currentState, loading: true }));
 

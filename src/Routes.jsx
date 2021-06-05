@@ -2,6 +2,10 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { Persons, EditPerson, NewPerson } from "./pages";
 
+/* route 1 = listagem
+  route 2 = incluir
+  route 3 = editar
+*/
 const Routes = () => (
   <Switch>
     <Route exact path="/">

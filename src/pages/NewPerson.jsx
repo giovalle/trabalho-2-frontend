@@ -9,7 +9,6 @@ const NewPerson = () => {
   const handleCreatePerson = useCallback(
     async (data) => {
       const result = await createPerson(data);
-      console.log(result);
       history.push("/");
     },
     [history]

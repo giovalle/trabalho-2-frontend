@@ -1,7 +1,7 @@
 const API_ROOT = "https://infinite-fortress-32011.herokuapp.com";
 
 export const getPersons = async () => {
-  const result = await fetch(`${API_ROOT}/pessoas?t=${Date.now()}`);
+  const result = await fetch(`${API_ROOT}/pessoas`);
   return result.json();
 };
 
@@ -21,7 +21,6 @@ export const getPersonById = async (id) => {
 };
 
 export const updatePersonById = async (id, body) => {
-  console.log(JSON.stringify(body));
   const result = await fetch(`${API_ROOT}/pessoas/${id}`, {
     method: "PUT",
     body: JSON.stringify(body),
